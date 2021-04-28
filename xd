@@ -1,1 +1,20 @@
-
+namespace DoWhile
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double suma = 0, valor_producto;
+            Console.Write("Ingrese el valor del producto: ");
+            valor_producto = Convert.ToDouble(Console.ReadLine());
+            do
+            {
+                suma = suma + valor_producto;
+                Console.Write("Ingrese el valor del producto: ");
+                valor_producto = Convert.ToDouble(Console.ReadLine());
+            } while (valor_producto != 0);
+            Console.Write("El total a pagar es: " + suma);
+            Console.ReadKey();
+        }
+    }
+}
